@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 20%;
+}
+
+
+.legend {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Pagination Style */
+.pagination {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    z-index: 10;
+    position: relative;
+}
+
+.pagination a {
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.pagination a:hover {
+    background-color: rgba(211, 213, 215, 0.5);
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.pagination a.active {
+    background-color: rgba(0, 181, 229, 1);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(5, 17%);
+    gap: 20px;
+    margin-left: 9%;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.games a {
+    text-decoration: none;
+    color: #000;
+}
+
+.card {
+    width: 220px;
+    height: 280px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #000;
+    box-shadow: 5px 5px 10px rgba(25, 25, 25, 0.5);
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.card img {
+    width: 80%;
+    height: 60%;
+    object-fit: cover;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+}
+
+.detailsContainer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.card-hr {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+}
+
+
+.detailsContainer h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.detailsContainer h4 {
+    font-size: 18px;
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+}
+
+.card-icons i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.card-icons i:hover {
+    color: #3498db;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover img {
+    filter: blur(4px);
+    animation: anim 3s infinite;
+}
+
+.card:hover .detailsContainer {
+    filter: blur(2px);
+}
+
+.textBox {
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+    position: absolute;
+    bottom: 50px;
+    width: 90%;
+    height: 70%;
+    display: flex;
+}
+
+.textBox p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.card-icons button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icons button:hover {
+    background-color: #3498db;
+    transform: scale(1.1);
+}
+
+.card-icons i {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.card-icons button:hover i {
+    color: #fff;
+}
+
+.card:hover .textBox {
+    opacity: 1;
+}
+
+.card:hover .card-icons {
+    opacity: 1;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

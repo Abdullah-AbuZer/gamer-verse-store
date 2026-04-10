@@ -1,0 +1,39 @@
+// snowwwwwwwwwwwwwwwww
+let container = document.getElementById('container');
+let count = 50;
+for (var i = 0; i < 50; i++) {
+    let leftSnow = Math.floor(Math.random() * container.clientWidth);
+    let topSnow = Math.floor(Math.random() * container.clientHeight);
+    let widthSnow = Math.floor(Math.random() * 50);
+    let timeSnow = Math.floor((Math.random() * 5) + 5);
+    let blurSnow = Math.floor(Math.random() * 10);
+    console.log(leftSnow);
+    let div = document.createElement('div');
+    div.classList.add('snow');
+    div.style.left = leftSnow + 'px';
+    div.style.top = topSnow + 'px';
+    div.style.width = widthSnow + 'px';
+    div.style.height = widthSnow + 'px';
+    div.style.animationDuration = timeSnow + 's';
+    div.style.filter = "blur(" + blurSnow + "px)";
+    container.appendChild(div);
+}
+
+
+// faqqqqqq
+
+const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+    const itemToggle = this.getAttribute('aria-expanded');
+
+    for (i = 0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false');
+    }
+
+    if (itemToggle == 'false') {
+        this.setAttribute('aria-expanded', 'true');
+    }
+}
+
+items.forEach((item) => item.addEventListener('click', toggleAccordion));

@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgba(0, 181, 229, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-btn {
+    display: flex;
+}
+
+.header-btn div {
+    display: inline-block;
+    padding: 5px;
+}
+
+.Curruncy select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border: none;
+    height: 100%;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: auto;
+}
+
+.login i {
+    display: flex;
+    align-items: center;
+}
+
+.header-btn .curruncyLogin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-btn .curruncyLogin a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header-btn .curruncyLogin div {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.header-btn .fav-cart {
+    display: flex;
+    gap: 5px;
+}
+
+.header-btn .fav-cart div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+header .search-box {
+    text-align: center;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+header .search-box input {
+    width: 60%;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 13px 0 0 13px;
+    padding: 8px;
+    font-size: 18px;
+    color: #1c90ac;
+}
+
+header .search-box input::placeholder {
+    color: #1c90ac;
+}
+
+header .search-box button {
+    position: absolute;
+    right: 15%;
+    height: 100%;
+    border: none;
+    background-color: #027b9c;
+    color: white;
+    border-radius: 0 13px 13px 0;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .search-box button:hover {
+    background-color: #015f7a;
+}
+
+header .search-box button i {
+    font-size: 20px;
+}
+
+.logo {
+    width: 100px;
+    margin-right: auto;
+}
+
+.fa-solid.fa-bag-shopping,
+.fa-regular.fa-heart,
+.fa-regular.fa-user {
+    color: #027b9c;
+    font-size: 20px;
+}
+
+.header-btn .fav-cart div:hover {
+    background-color: #9e2a2a;
+    transition: background-color 0.3s ease;
+}
+
+.header-btn .fav-cart div:hover i {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.header-btn .curruncyLogin .login:hover {
+    background-color: #9e2a2a;
+    transition: background-color 0.3s ease;
+}
+
+.header-btn .curruncyLogin div:hover i,
+.header-btn .curruncyLogin div:hover span {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+/* Navigation */
+nav {
+    display: block;
+    background-color: rgba(0, 181, 229, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 5px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.dropbtn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(28, 28, 28, 0.9);
+    min-width: 300px;
+    max-width: 900px;
+    box-shadow: 2px 8px 16px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav:hover {
+    background-color: rgba(0, 181, 229, 1);
+}
+
+.dropdown:hover .dropbtn {
+    color: #1c90ac;
+}

@@ -1,0 +1,240 @@
+.GamesSection {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.boardGamesR,
+.hororGamesL {
+    flex: 1;
+    /* Each div takes equal space */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background 1s ease;
+}
+
+.boardGamesR:hover,
+.hororGamesL:hover {
+    background: rgba(0, 0, 0, 0.7);
+    /* Darker on hover */
+}
+
+.GamesSection a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.ChessQueen {
+    float: left;
+    top: 70%;
+    left: 2%;
+    transform: rotate(-10deg);
+}
+
+.PSController {
+    width: 100px;
+    float: left;
+    right: 10%;
+    transform: rotate(15deg);
+}
+
+.TricksAce {
+    float: left;
+    left: 5%;
+    transform: rotate(-5deg);
+}
+
+.TricksRed {
+    float: right;
+    right: 5%;
+    transform: rotate(-5deg);
+}
+
+.bestSellers h2,
+.newRelease h2 {
+    font-size: 28px;
+    color: #333;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.bestSellers img {
+    position: relative;
+    max-width: 200px;
+}
+
+.sale img {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* faqqqqqqqqqqqqqqqqqqqqqqq */
+
+.faqContainer h2 {
+    font-size: 28px;
+    color: #333;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.accordion {
+    margin: 20px 50px;
+    width: 48rem;
+}
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid #03b5d2;
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+    color: #03b5d2;
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded='true']+.accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+}
+
+
+/* snowwwwwwwwwwwwwwwwwwwwwwww
+*/
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/1.webp);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/winter/snow.png);
+    background-size: cover;
+    animation: animationSnow 4s ease-in-out infinite;
+}
+
+@keyframes animationSnow {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(100px, 50vh);
+    }
+}

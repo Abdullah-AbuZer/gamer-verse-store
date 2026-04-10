@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3448d16c42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/Details.css">
+    <link rel="stylesheet" href="./css/CardGamesStyle.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Product Detail Page</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/Teams/team-logo-1.png" alt="logo">
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="What are you looking for?">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="header-btn">
+            <div class="curruncyLogin">
+                <div class="Curruncy">
+                    <select id="currency">
+                        <option value="1.41" data-currency="$">USD</option>
+                        <option value="0.71" data-currency="JOD">JOD</option>
+                        <option value="1.32" data-currency="€">EUR</option>
+                    </select>
+                </div>
+                <a href="login.html">
+                    <div class="login">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Login</span>
+                    </div>
+                </a>
+            </div>
+            <div class="fav-cart">
+                <div class="fav">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <div class="dropdown">
+                    <a href="index.html"><button class="dropbtn"><i class="fa-solid fa-house"></i>
+                            Home</button></a>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fa-solid fa-gamepad"></i> Games <i
+                            class="fa-solid fa-angle-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="All.html">Board Games</a>
+                        <ul>
+                            <li><a href="StrategyGames.html">StrategyGames</a></li>
+                            <li><a href="PartyGames.html">PartyGames</a></li>
+                            <li><a href="CardGames.html">Card Games</a></li>
+                            <li><a href="FamilyGames.html">Family Games</a></li>
+                            <li><a href="AbstractGames.html">Abstract Games</a></li>
+                            <li><a href="DexterityGames.html">Dexterity Games</a></li>
+                            <li><a href="EducationalGames.html">Educational Games</a></li>
+                        </ul>
+                        <a href="#">Online Games</a>
+                        <ul>
+                            <li><a href="">Horror</a></li>
+                            <li><a href="">#</a></li>
+                            <li><a href="">#</a></li>
+                            <li><a href="">#</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fa-solid fa-trophy"></i> Tournaments <i
+                            class="fa-solid fa-angle-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="Tournaments.html#Live">Live</a>
+                        <a href="Tournaments.html#worldCup">World cup</a>
+                        <a href="Tournaments.html#local">Local</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="aboutus.html"><button class="dropbtn"><i class="fa-solid fa-people-group"></i> About
+                            us</button></a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="product-detail">
+        <img src="./img/BoardGames/Jenga.jpg" alt="Jenga Game" />
+        <div class="product-info">
+            <h1>Jenga</h1>
+            <p class="price" id="result"></p>
+            <!-- $13.00 -->
+            <!-- Customer Ratings Section -->
+            <div class="ratings">
+                <span class="star-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                <span class="rating-count">(150 reviews)</span>
+            </div>
+
+            <div class="buttons">
+                <div class="quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                </div>
+                <button class="btn cart">Add To Cart</button>
+                <button class="btn checkout">Check Out</button>
+            </div>
+            <p class="description">Expertly crafted, this classic wooden block-stacking game is a fun and challenging
+                test of skill. Build the tower, take turns removing blocks, and see how high you can go before it
+                topples.</p>
+
+            <!-- Product Details Section -->
+            <div class="product-details">
+                <ul>
+                    <li>
+                        <div class="detail-item">
+                            <strong>Recommended Age:</strong> 5+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="detail-item">
+                            <strong>Number of Players:</strong> 2-4 players
+                        </div>
+                    </li>
+                    <li>
+                        <div class="detail-item">
+                            <strong>Material:</strong> Premium Wood
+                        </div>
+                    </li>
+                    <li>
+                        <div class="detail-item">
+                            <strong>Dimensions:</strong> 10 x 10 x 15 inches
+                        </div>
+                    </li>
+                    <li>
+                        <div class="detail-item">
+                            <strong>Weight:</strong> 1.5 lbs
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="similar-products">
+        <h2>Similar Products</h2>
+        <div class="games">
+            <a href="#">
+                <div class="card">
+                    <img src="./img/BoardGames/Mafia.jpg" alt="Mafia" />
+                    <div class="detailsContainer">
+                        <h2>Mafia</h2>
+                        <hr class="card-hr">
+                        <h4>$3.50</h4>
+                    </div>
+                    <div class="textBox">
+                        <p>This game aims to make a lot of ha ha lo lo re re</p>
+                    </div>
+                    <div class="card-icons">
+                        <button><i class="fa-regular fa-heart"></i></button>
+                        <button><i class="fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card">
+                    <img src="./img/BoardGames/UNO.jpg" alt="UNO" />
+                    <div class="detailsContainer">
+                        <h2>UNO</h2>
+                        <hr class="card-hr">
+                        <h4>$4.00</h4>
+                    </div>
+                    <div class="textBox">
+                        <p>This game aims to make a lot of ha ha lo lo re re</p>
+                    </div>
+                    <div class="card-icons">
+                        <button><i class="fa-regular fa-heart"></i></button>
+                        <button><i class="fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card">
+                    <img src="./img/BoardGames/Chess.jpg" alt="Chess" />
+                    <div class="detailsContainer">
+                        <h2>Chess</h2>
+                        <hr class="card-hr">
+                        <h4>$7.50</h4>
+                    </div>
+                    <div class="textBox">
+                        <p>This game aims to make a lot of ha ha lo lo re re</p>
+                    </div>
+                    <div class="card-icons">
+                        <button><i class="fa-regular fa-heart"></i></button>
+                        <button><i class="fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card">
+                    <img src="./img/BoardGames/Jumanji.jpg" alt="Jumanji" />
+                    <div class="detailsContainer">
+                        <h2>Jumanji</h2>
+                        <hr class="card-hr">
+                        <h4>$29.99</h4>
+                    </div>
+                    <div class="textBox">
+                        <p>This game aims to make a lot of ha ha lo lo re re</p>
+                    </div>
+                    <div class="card-icons">
+                        <button><i class="fa-regular fa-heart"></i></button>
+                        <button><i class="fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card">
+                    <img src="./img/BoardGames/Cranium.png" alt="Cranium" />
+                    <div class="detailsContainer">
+                        <h2>Cranium</h2>
+                        <hr class="card-hr">
+                        <h4>$19.99</h4>
+                    </div>
+                    <div class="textBox">
+                        <p>This game aims to make a lot of ha ha lo lo re re</p>
+                    </div>
+                    <div class="card-icons">
+                        <button><i class="fa-regular fa-heart"></i></button>
+                        <button><i class="fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="reviews-container">
+        <h2>Customer ratings</h2>
+        <div class="review-data">
+            <div class="review-summary">
+                <div class="average-rating">
+                    <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i
+                            class="fa-regular fa-star"></i></span> 3.5 out of 5
+                </div>
+                <div>5 Stars <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></span> 100 Reviews</div>
+                <div>4 Stars <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-regular fa-star"></i></span> 47 Reviews</div>
+                <div>3 Stars <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                            class="fa-regular fa-star"></i></span> 2 Reviews</div>
+                <div>2 Stars <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                            class="fa-regular fa-star"></i></span> 0 Reviews</div>
+                <div>1 Star <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                            class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                            class="fa-regular fa-star"></i></span> 1 Reviews</div>
+            </div>
+            <div class="review-items">
+                <div class="review-item">
+                    <div class="review-author">Ahmad</div>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></div>
+                    <div class="review-date">on 2024-12-21</div>
+                    <div class="review-text">Great quality, I recommend everyone to buy it</div>
+                </div>
+                <div class="review-item">
+                    <div class="review-author">Eyass</div>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="review-date">on 2024-1-02</div>
+                    <div class="review-text">Tons of fun with this Jenga tower! Great craftsmanship and balance...</div>
+                </div>
+                <div class="review-item">
+                    <div class="review-author">Dr.Islam</div>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                            class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                            class="fa-regular fa-star"></i></div>
+                    <div class="review-date">on 2024-12-25</div>
+                    <div class="review-text">I was expecting more but the quality is ok
+                        though</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container  footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <img src="./img/Teams/team-logo-1.png" alt="logo">
+                </a>
+                <p>
+                    We specialize in providing a wide range of video games, consoles, accessories, and expert
+                    repair
+                    services. Dedicated to delivering high-quality products and exceptional service for all your
+                    gaming
+                    needs. <i class="fa-regular fa-face-smile"></i>
+                </p>
+            </div>
+            <div class="footer_2">
+                <h4><i class="fa-solid fa-link"></i> links</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="All.html">Games</a></li>
+                    <li><a href="Tournaments.html">Tournaments</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_3">
+                <h4><i class="fa-solid fa-shield"></i> Policies</h4>
+                <ul class="privacy">
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer_4">
+                <h4>contact us</h4>
+                <div>
+                    <p><i class="fa-solid fa-phone"></i> 079*******</p>
+                    <p><i class="fa-solid fa-envelope"></i> **********@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Amman-Jordan</p>
+                </div>
+                <ul class="social">
+                    <ul>
+                        <a href="https://web.facebook.com/" target="_blank">
+                            <li class="icon facebook">
+                                <span class="tooltip">Facebook</span>
+                                <i class="fa-brands fa-facebook"></i>
+                            </li>
+                        </a>
+                        <a href="https://x.com/" target="_blank">
+                            <li class="icon twitter">
+                                <span class="tooltip">Twitter</span>
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </li>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <li class="icon instagram">
+                                <span class="tooltip">Instagram</span>
+                                <i class="fa-brands fa-instagram"></i>
+                            </li>
+                        </a>
+                        <a href="https://github.com/" target="_blank">
+                            <li class="icon github">
+                                <span class="tooltip">Github</span>
+                                <i class="fa-brands fa-github"></i>
+                                </i>
+                            </li>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <li class="icon youtube">
+                                <span class="tooltip">Youtube</span>
+                                <i class="fa-brands fa-youtube"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </ul>
+
+            </div>
+        </div>
+        <div class="footer_copyright">
+
+            <h5> &copy; 2024 All Rights Reserved.</h5>
+        </div>
+    </footer>
+    <script src="./JS/Price.js"></script>
+</body>
+
+</html>
